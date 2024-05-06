@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Works from "@/components/Works";
 import Image from "next/image";
@@ -66,6 +67,7 @@ export default function Home() {
       </div>
       <About />
       <Works />
+      <Contact />
     </>
   );
 }
