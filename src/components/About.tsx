@@ -42,13 +42,13 @@ export default function About() {
         <div className="w-full flex flex-col gap-8 shadow-md rounded-lg p-4 bg-zinc-50  ">
           <h2>Um resumo sobre minhas atividades</h2>
           <span>
-            As a developer with a few years of experience, I have worked in
-            several projects that have helped me to improve my skills and
-            knowledge. And I continue to be passionate about learning new
-            technologies and methodologies. I have worked in frontend, backend
-            and mobile projects, and in all projects I use to work with agile
-            methodologies, like Scrum and Kanban. If you want to know more about
-            my professional life, you can check my resume.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+            consequatur, amet sapiente quo nemo sint? Delectus neque, facilis
+            eveniet ipsam explicabo porro sequi accusantium omnis ducimus itaque
+            debitis mollitia iusto. Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Ullam consequatur, amet sapiente quo nemo sint?
+            Delectus neque, facilis eveniet ipsam explicabo porro sequi
+            accusantium omnis ducimus itaque debitis mollitia iusto.{" "}
           </span>
           <button className="bg-[#0694FE] w-fit px-4 py-2 rounded-lg text-white">
             Baixar Curriculo
@@ -57,13 +57,10 @@ export default function About() {
         <div className="w-full flex flex-col gap-8 shadow-md rounded-lg p-4 bg-zinc-50  flex-auto max-w-xl">
           <h2>Educação</h2>
           <span className="">
-            I have a strong academic background in computer science, with a
-            Computer Technician degree at Federal Institute of Mato Grosso do
-            Sul (IFMS) and a Bachelor's degree in Computer Science at Federal
-            University of Mato Grosso do Sul (UFMS). During my academic life, I
-            gained experience in robotics, software development, and research. I
-            have worked in several projects, and I have published some papers in
-            conferences and journals.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            rem nisi laudantium voluptas quibusdam voluptatum magnam vel
+            blanditiis esse ipsam maxime neque eius, quasi ratione facere
+            nesciunt assumenda rerum consequuntur.
           </span>
         </div>
       </div>
