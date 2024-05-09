@@ -3,10 +3,10 @@ import React from "react";
 
 export default function Works() {
   return (
-    <section className="container w-full flex flex-col items-center justify-center text-[#0694FE] mx-auto">
+    <section className="container w-full flex flex-col items-center justify-center text-[#0694FE] mx-auto py-16">
       <main className="relative flex flex-col w-full items-start">
         <div className="flex justify-start gap-4 items-center">
-          <h2 className="text-[#0694FE] font-bold text-4xl my-8 ">
+          <h2 className="text-[#0694FE] font-bold text-4xl mb-8 ">
             Selected Works
           </h2>
         </div>

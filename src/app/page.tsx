@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Tecnologias from "@/components/Tecnologias";
 import Works from "@/components/Works";
 import Image from "next/image";
 
@@ -68,6 +69,7 @@ export default function Home() {
       </div>
       <About />
       <Works />
+      <Tecnologias />
       <Contact />
       <Footer />
     </>
