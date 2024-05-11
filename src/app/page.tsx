@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Jobs from "@/components/Jobs";
 import Tecnologias from "@/components/Tecnologias";
 import Works from "@/components/Works";
 import Image from "next/image";
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Header />
+
       <div className="w-full bg-[#0694FE] flex flex-col items-center justify-center text-white">
         <main className="relative max-w-7xl h-screen flex flex-col w-full justify-center">
           <span className="text-3xl">Olá, eu sou o leonardo</span>
@@ -67,7 +69,9 @@ export default function Home() {
           </div>
         </main>
       </div>
+
       <About />
+
       <Works />
       <Tecnologias />
       <Contact />

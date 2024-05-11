@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="h-screen flex flex-col gap-4">
+    <section className="min-h-screen h-full flex flex-col gap-4 mx-4 lg:mx-0">
       <div className="container mx-auto">
         <h2 className="font-bold text-[#0694FE] text-center  text-3xl mt-24 mb-12">
           Sobre Mim

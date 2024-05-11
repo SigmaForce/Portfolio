@@ -4,11 +4,16 @@ import React from "react";
 type CardsProps = {
   nome: string;
   url: string;
+  site: string;
 };
 
-export function Cards({ nome, url }: CardsProps) {
+export function Cards({ nome, url, site }: CardsProps) {
   return (
-    <div className="flex items-center gap-3 rounded-md p-3 w-full bg-zinc-100 ">
+    <a
+      href={site}
+      target="_blank"
+      className="flex items-center gap-3 rounded-md p-3 w-full bg-zinc-100 hover:scale-110 transition-all duration-300"
+    >
       <div className="invert-0 stack-img-container p-2 flex items-center justify-center rounded-lg relative overflow-hidden undefined">
         <Image
           src={url}
@@ -26,6 +31,6 @@ export function Cards({ nome, url }: CardsProps) {
         />
       </div>
       <span>{nome}</span>
-    </div>
+    </a>
   );
 }

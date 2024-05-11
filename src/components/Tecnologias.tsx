@@ -4,8 +4,8 @@ import { techStack } from "../config/techs";
 
 export default function Tecnologias() {
   return (
-    <section className="h-screen container w-full mx-auto">
-      <h2 className="text-4xl font-bold text-[##0694FE] pb-2">Tecnologias</h2>
+    <section className="min-h-screen h-full container w-full mx-auto px-4 lg:px-0">
+      <h2 className="text-4xl font-bold text-[#0694FE] pb-2">Tecnologias</h2>
       <span className="max-w-2xl w-full block mb-12">
         Sou um programador versátil com experiência em diversas linguagens de
         programação, frameworks e ferramentas. Da construção do front-end ao
@@ -13,51 +13,80 @@ export default function Tecnologias() {
         escaláveis.
       </span>
       <div>
-        <h3>Frontend</h3>
-        <div className="grid grid-cols-12 w-full gap-4">
-          {techStack.frontend.map((tech) => (
-            <div className="col-span-2">
-              <Cards key={tech.nome} nome={tech.nome} url={tech.url} />
+        <h5 className="text-xl font-bold my-4 text-[#0694FE]">Frontend</h5>
+        <div className="grid grid-cols-12 w-full gap-4 pb-8">
+          {techStack.frontend.map((tech, index) => (
+            <div className="lg:col-span-2 col-span-6">
+              <Cards
+                key={tech.nome + index}
+                nome={tech.nome}
+                url={tech.url}
+                site={tech.site}
+              />
             </div>
           ))}
         </div>
       </div>
       <div>
-        <h3>Backend</h3>
-        <div className="grid grid-cols-12 w-full gap-4">
-          {techStack.backend.map((tech) => (
-            <div className="col-span-2">
-              <Cards key={tech.nome} nome={tech.nome} url={tech.url} />
+        <h5 className="text-xl font-bold my-4 text-[#0694FE]">Backend</h5>
+        <div className="grid grid-cols-12 w-full gap-4 pb-8">
+          {techStack.backend.map((tech, index) => (
+            <div className="lg:col-span-2 col-span-6">
+              <Cards
+                key={tech.nome + index}
+                nome={tech.nome}
+                url={tech.url}
+                site={tech.site}
+              />
             </div>
           ))}
         </div>
       </div>
       <div>
-        <h3>Banco de Dados</h3>
-        <div className="grid grid-cols-12 w-full gap-4">
-          {techStack.database.map((tech) => (
-            <div className="col-span-2">
-              <Cards key={tech.nome} nome={tech.nome} url={tech.url} />
+        <h5 className="text-xl font-bold my-4 text-[#0694FE]">
+          Banco de Dados
+        </h5>
+        <div className="grid grid-cols-12 w-full gap-4 pb-8">
+          {techStack.database.map((tech, index) => (
+            <div className="lg:col-span-2 col-span-6">
+              <Cards
+                key={tech.nome + index}
+                nome={tech.nome}
+                url={tech.url}
+                site={tech.site}
+              />
             </div>
           ))}
         </div>
       </div>
       <div>
-        <h3>Controle de Versões</h3>
-        <div className="grid grid-cols-12 w-full gap-4">
-          {techStack.version.map((tech) => (
-            <div className="col-span-2">
-              <Cards key={tech.nome} nome={tech.nome} url={tech.url} />
+        <h5 className="text-xl font-bold my-4 text-[#0694FE]">
+          Controle de Versões
+        </h5>
+        <div className="grid grid-cols-12 w-full gap-4 pb-8">
+          {techStack.version.map((tech, index) => (
+            <div className="lg:col-span-2 col-span-6">
+              <Cards
+                key={tech.nome + index}
+                nome={tech.nome}
+                url={tech.url}
+                site={tech.site}
+              />
             </div>
           ))}
         </div>
       </div>
       <div>
-        <h3>Extras</h3>
-        <div className="grid grid-cols-12 w-full gap-4">
-          {techStack.others.map((tech) => (
-            <div className="col-span-2">
-              <Cards key={tech.nome} nome={tech.nome} url={tech.url} />
+        <h5 className="text-xl font-bold my-4 text-[#0694FE]">Extras</h5>
+        <div className="grid grid-cols-12 w-full gap-4 pb-8">
+          {techStack.others.map((tech, index) => (
+            <div className="lg:col-span-2 col-span-6">
+              <Cards
+                key={tech.nome + index}
+                nome={tech.nome}
+                url={tech.url}
+                site={tech.site}
+              />
             </div>
           ))}
         </div>
