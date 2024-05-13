@@ -2,7 +2,7 @@ import { Job } from "@/config/jobs";
 import { ArrowTopRightIcon, PlusIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import React from "react";
-import { Badge } from "./badge";
+import { Badge } from "./Badge";
 
 export default function Jobs({ banner, title, excerpt, techs, url }: Job) {
   return (
