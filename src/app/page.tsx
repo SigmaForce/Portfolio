@@ -6,7 +6,6 @@ import Jobs from "@/components/Jobs";
 import { Hero } from "@/components/Sections/Hero";
 import Tecnologias from "@/components/Tecnologias";
 import Works from "@/components/Works";
-import Image from "next/image";
 
 export default function Home() {
   return (

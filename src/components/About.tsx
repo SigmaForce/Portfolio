@@ -1,5 +1,5 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image'
+import React from 'react'
 
 export default function About() {
   return (
@@ -8,7 +8,7 @@ export default function About() {
         <h2 className="font-bold text-[#0694FE] text-3xl mt-24 mb-12 text-start lg:text-center">
           Sobre Mim
         </h2>
-        <div className="w-full flex flex-col lg:flex-row gap-8 border rounded-lg p-4 bg-zinc-50">
+        <div className="w-full flex flex-col lg:flex-row gap-8 border rounded-lg p-4 bg-primary-foreground">
           <div className="">
             <Image
               src="/images/Eu.jpg"
@@ -51,7 +51,7 @@ export default function About() {
         </div>
       </div>
       <div className="container mx-auto flex flex-col lg:flex-row  gap-4">
-        <div className="w-full flex flex-col gap-8 border rounded-lg p-4 bg-zinc-50  ">
+        <div className="w-full flex flex-col gap-8 border rounded-lg p-4 bg-primary-foreground  ">
           <h3 className="font-bold text-[#0694FE] text-2xl mb-4">
             Um resumo sobre minhas atividades
           </h3>
@@ -73,7 +73,7 @@ export default function About() {
             Baixar Curriculo
           </button>
         </div>
-        <div className="w-full flex flex-col gap-8 rounded-lg p-4 flex-auto max-w-lg  border">
+        <div className="w-full flex flex-col gap-8 rounded-lg p-4 flex-auto max-w-lg  border bg-primary-foreground">
           <h3 className="font-bold text-[#0694FE] text-2xl mb-4">Educação</h3>
           <span className="">
             Minha formação acadêmica é sólida, com um diploma de Técnico em
@@ -89,5 +89,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  );
+  )
 }

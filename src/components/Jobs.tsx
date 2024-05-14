@@ -1,8 +1,8 @@
-import { Job } from "@/config/jobs";
-import { ArrowTopRightIcon, PlusIcon } from "@radix-ui/react-icons";
-import Image from "next/image";
-import React from "react";
-import { Badge } from "./Badge";
+import { Job } from '@/config/jobs'
+import { ArrowTopRightIcon, PlusIcon } from '@radix-ui/react-icons'
+import Image from 'next/image'
+import React from 'react'
+import { Badge } from './Badge'
 
 export default function Jobs({ banner, title, excerpt, techs, url }: Job) {
   return (
@@ -25,9 +25,9 @@ export default function Jobs({ banner, title, excerpt, techs, url }: Job) {
         <h2 className="text-2xl font-bold">{title}</h2>
         <span className="text-base text-zinc-600 mt-1">{excerpt}</span>
       </div>
-      <div className="flex gap-4">
+      <div className="flex gap-4 mt-auto">
         <a
-          href={url ? url : "#"}
+          href={url ? url : '#'}
           className="text-base bg-[#0694FE]  text-white px-4 py-2 rounded-lg flex items-center justify-center gap-1"
         >
           <ArrowTopRightIcon className="size-5" />
@@ -39,5 +39,5 @@ export default function Jobs({ banner, title, excerpt, techs, url }: Job) {
         </button>
       </div>
     </>
-  );
+  )
 }
