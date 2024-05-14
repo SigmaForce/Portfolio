@@ -61,8 +61,8 @@ export default function About() {
             aprimoramento das minhas habilidades e conhecimentos. Além disso,
             mantenho o compromisso contínuo de explorar e dominar novas
             tecnologias e metodologias. Minha experiência abrange projetos em
-            frontend, backend e mobile, nos quais utilizei metodologias ágeis,
-            como Scrum e Kanban, para assegurar uma entrega eficiente e de alta
+            frontend e backend, nos quais utilizei metodologias ágeis, como
+            Scrum e Kanban, para assegurar uma entrega eficiente e de alta
             qualidade.
           </span>
           <span>
