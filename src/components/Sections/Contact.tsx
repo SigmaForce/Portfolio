@@ -3,12 +3,15 @@ import {
   GitHubLogoIcon,
   InstagramLogoIcon,
   LinkedInLogoIcon,
-} from "@radix-ui/react-icons";
-import React from "react";
+} from '@radix-ui/react-icons'
+import React from 'react'
 
 export default function Contact() {
   return (
-    <div className="container mx-auto min-h-screen h-full flex items-center justify-center px-4 lg:px-0">
+    <section
+      id="contact"
+      className="container mx-auto min-h-screen h-full flex items-center justify-center px-4 lg:px-0"
+    >
       <div>
         <h2 className="text-[#0694FE] text-5xl font-bold text-center">
           Vamos nos Conectar?
@@ -54,6 +57,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </section>
+  )
 }

@@ -1,10 +1,13 @@
-import React from "react";
-import { Cards } from "./Cards";
-import { techStack } from "../config/techs";
+import React from 'react'
+import { Cards } from '../Cards'
+import { techStack } from '../../config/techs'
 
 export default function Tecnologias() {
   return (
-    <section className="min-h-screen h-full container w-full mx-auto px-4 lg:px-0">
+    <section
+      id="skills"
+      className="min-h-screen h-full container w-full mx-auto px-4 lg:px-0"
+    >
       <h2 className="text-4xl font-bold text-[#0694FE] pb-2">Tecnologias</h2>
       <span className="max-w-2xl w-full block mb-12">
         Sou um programador versátil com experiência em diversas linguagens de
@@ -92,5 +95,5 @@ export default function Tecnologias() {
         </div>
       </div>
     </section>
-  );
+  )
 }

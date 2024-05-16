@@ -22,10 +22,46 @@ export default function Header() {
       <nav className="flex justify-between items-center container mx-auto h-20">
         <div className="mx-4 lg:mx-0">Logo</div>
         <ul className="gap-4 items-center hidden lg:flex">
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Works</li>
+          <li>
+            <a
+              href="#home"
+              className="hover:text-[#1e1e1e] transition-colors duration-500 ease-in-out"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="#about"
+              className="hover:text-[#1e1e1e] transition-colors duration-500 ease-in-out"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#works"
+              className="hover:text-[#1e1e1e] transition-colors duration-500 ease-in-out"
+            >
+              Works
+            </a>
+          </li>
+          <li>
+            <a
+              href="#skills"
+              className="hover:text-[#1e1e1e] transition-colors duration-500 ease-in-out"
+            >
+              Skills
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              className="hover:text-[#1e1e1e] transition-colors duration-500 ease-in-out"
+            >
+              Contact
+            </a>
+          </li>
           <li>
             <ToggleTheme
               isDark={isDark}

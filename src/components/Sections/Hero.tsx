@@ -1,28 +1,31 @@
-"use client";
-import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
+'use client'
+import Image from 'next/image'
+import React, { useEffect, useRef, useState } from 'react'
 
 export function Hero() {
   const images = [
-    { src: "./linkedin.svg", width: 48, height: 48 },
-    { src: "./github.svg", width: 48, height: 48 },
-    { src: "./instagram.svg", width: 48, height: 48 },
-  ];
-  const currentImageIndex = useRef(0);
+    { src: './linkedin.svg', width: 48, height: 48 },
+    { src: './github.svg', width: 48, height: 48 },
+    { src: './instagram.svg', width: 48, height: 48 },
+  ]
+  const currentImageIndex = useRef(0)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const animatedImages = document.querySelectorAll(".animated-image");
-      animatedImages[currentImageIndex.current].classList.add("hidden");
+      const animatedImages = document.querySelectorAll('.animated-image')
+      animatedImages[currentImageIndex.current].classList.add('hidden')
       currentImageIndex.current =
-        (currentImageIndex.current + 1) % images.length;
-      animatedImages[currentImageIndex.current].classList.remove("hidden");
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
+        (currentImageIndex.current + 1) % images.length
+      animatedImages[currentImageIndex.current].classList.remove('hidden')
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
 
   return (
-    <div className="w-full bg-[#0694FE] flex flex-col items-center justify-center text-white">
+    <section
+      id="home"
+      className="w-full bg-[#0694FE] flex flex-col items-center justify-center text-white"
+    >
       <main className="relative max-w-7xl h-screen flex flex-col w-full justify-center px-4">
         <span className="lg:text-3xl text-2xl my-4">
           Olá, eu sou o leonardo
@@ -35,7 +38,7 @@ export function Hero() {
             {images.map((image, index) => (
               <Image
                 key={index}
-                className={`py-3 animated-image ${index !== 0 ? "hidden" : ""}`}
+                className={`py-3 animated-image ${index !== 0 ? 'hidden' : ''}`}
                 src={image.src}
                 width={image.width}
                 height={image.height}
@@ -70,7 +73,7 @@ export function Hero() {
                 height={48}
                 alt="Uma Flecha apontada para o texto"
               />
-              <h2>WORKS</h2>
+              <a href="#works">WORKS</a>
             </div>
             <Image
               className="py-3 square-rotate"
@@ -82,6 +85,6 @@ export function Hero() {
           </div>
         </div>
       </main>
-    </div>
-  );
+    </section>
+  )
 }

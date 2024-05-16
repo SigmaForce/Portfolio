@@ -30,7 +30,7 @@ export function Cards({ nome, url, site }: CardsProps) {
           className="blur-lg size-12 absolute inset-0 opacity-80 z-0"
         />
       </div>
-      <span>{nome}</span>
+      <span className="text-xs font-medium">{nome}</span>
     </a>
   )
 }

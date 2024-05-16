@@ -3,8 +3,11 @@ import React from 'react'
 
 export default function About() {
   return (
-    <section className="min-h-screen h-full flex flex-col gap-4 mx-4 lg:mx-0">
-      <div className="container mx-auto">
+    <section
+      id="about"
+      className="container min-h-screen h-full w-full flex flex-col items-center justify-center mx-auto  gap-4 px-4 lg:px-0"
+    >
+      <div className="">
         <h2 className="font-bold text-[#0694FE] text-3xl mt-24 mb-12 text-start lg:text-center">
           Sobre Mim
         </h2>
@@ -18,8 +21,8 @@ export default function About() {
               className="object-cover w-full rounded-lg"
             />
           </div>
-          <div className="flex flex-col flex-grow">
-            <div className="flex-1">
+          <div className="flex flex-col w-ful">
+            <div className="flex-1 w-full">
               <h3 className="font-bold text-[#0694FE] text-2xl mb-4">
                 Informações pessoais
               </h3>
@@ -50,7 +53,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="container mx-auto flex flex-col lg:flex-row  gap-4">
+      <div className=" flex flex-col lg:flex-row  gap-4">
         <div className="w-full flex flex-col gap-8 border rounded-lg p-4 bg-primary-foreground  ">
           <h3 className="font-bold text-[#0694FE] text-2xl mb-4">
             Um resumo sobre minhas atividades
