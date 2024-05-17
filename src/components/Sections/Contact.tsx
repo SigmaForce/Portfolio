@@ -27,34 +27,47 @@ export default function Contact() {
         </h3>
 
         <div className="flex gap-8 items-center lg:justify-between justify-center max-w-xl w-full mx-auto">
-          <div className="flex gap-2 items-center">
+          <a
+            href="https://www.linkedin.com/in/sigmaforc3/"
+            target="_blank"
+            className="flex gap-2 group items-center"
+          >
             <LinkedInLogoIcon className="size-8 text-[#0694FE]" />
-            <a href="#" className="relative lg:inline-block group hidden">
-              <span className="relative z-10">Linkedin</span>
-              <span className="absolute bottom-0 left-1/2 bg-[#0694FE] h-0.5 transition-all transform -translate-x-1/2 origin-bottom group-hover:w-full w-0 duration-500"></span>
-            </a>
-          </div>
-          <div className="flex gap-2 items-center">
+            <div className="relative ">
+              <span className="relative z-10 hidden lg:inline-block">
+                Linkedin
+              </span>
+              <span className="absolute bottom-0 left-1/2 bg-[#0694FE] h-0.5 transition-all transform -translate-x-1/2 origin-bottom group-hover:w-full w-0 duration-500 hidden lg:block"></span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.instagram.com/sigmaforc3/"
+            target="_blank"
+            className="flex gap-2 group items-center"
+          >
             <InstagramLogoIcon className="size-8 text-[#0694FE]" />
-            <a href="#" className="relative lg:inline-block group hidden">
-              <span className="relative z-10">Instagram</span>
-              <span className="absolute bottom-0 left-1/2 bg-[#0694FE] h-0.5 transition-all transform -translate-x-1/2 origin-bottom group-hover:w-full w-0 duration-500"></span>
-            </a>
-          </div>
-          <div className="flex gap-2 items-center">
+            <div className="relative">
+              <span className="relative z-10 hidden lg:inline-block">
+                Instagram
+              </span>
+              <span className="absolute bottom-0 left-1/2 bg-[#0694FE] h-0.5 transition-all transform -translate-x-1/2 origin-bottom group-hover:w-full w-0 duration-500 hidden lg:block"></span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/SigmaForce"
+            target="_blank"
+            className="flex gap-2 group items-center"
+          >
             <GitHubLogoIcon className="size-8 text-[#0694FE]" />
-            <a href="#" className="relative lg:inline-block group hidden">
-              <span className="relative z-10">Github</span>
+            <div className="relative">
+              <span className="relative z-10 hidden lg:inline-block">
+                Github
+              </span>
               <span className="absolute bottom-0 left-1/2 bg-[#0694FE] h-0.5 transition-all transform -translate-x-1/2 origin-bottom group-hover:w-full w-0 duration-500"></span>
-            </a>
-          </div>
-          <div className="flex gap-2 items-center">
-            <DiscordLogoIcon className="size-8 text-[#0694FE]" />
-            <a href="#" className="relative lg:inline-block group hidden">
-              <span className="relative z-10"> Discord</span>
-              <span className="absolute bottom-0 left-1/2 bg-[#0694FE] h-0.5 transition-all transform -translate-x-1/2 origin-bottom group-hover:w-full w-0 duration-500"></span>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
     </section>

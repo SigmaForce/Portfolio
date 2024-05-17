@@ -18,14 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth antialiased">
       <body className={`${inter.className} bg-background`}>
-        {' '}
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
-          {children}{' '}
+          {children}
         </ThemeProvider>
       </body>
     </html>

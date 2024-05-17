@@ -4,9 +4,24 @@ import React, { useEffect, useRef, useState } from 'react'
 
 export function Hero() {
   const images = [
-    { src: './linkedin.svg', width: 48, height: 48 },
-    { src: './github.svg', width: 48, height: 48 },
-    { src: './instagram.svg', width: 48, height: 48 },
+    {
+      src: './linkedin.svg',
+      href: 'https://www.linkedin.com/in/sigmaforc3/',
+      width: 48,
+      height: 48,
+    },
+    {
+      src: './github.svg',
+      href: 'https://github.com/SigmaForce',
+      width: 48,
+      height: 48,
+    },
+    {
+      src: './instagram.svg',
+      href: 'https://www.instagram.com/sigmaforc3/',
+      width: 48,
+      height: 48,
+    },
   ]
   const currentImageIndex = useRef(0)
 
@@ -36,14 +51,18 @@ export function Hero() {
           </h1>
           <div>
             {images.map((image, index) => (
-              <Image
-                key={index}
-                className={`py-3 animated-image ${index !== 0 ? 'hidden' : ''}`}
-                src={image.src}
-                width={image.width}
-                height={image.height}
-                alt={`Logo ${index}`}
-              />
+              <a href={image.href} target="_blank">
+                <Image
+                  key={index}
+                  className={`py-3 animated-image ${
+                    index !== 0 ? 'hidden' : ''
+                  }`}
+                  src={image.src}
+                  width={image.width}
+                  height={image.height}
+                  alt={`Logo ${index}`}
+                />
+              </a>
             ))}
           </div>
         </div>

@@ -87,12 +87,40 @@ export default function Header() {
 
       {isOpenMenu && (
         <main className="fixed left-0 top-0 z-30 min-h-screen w-screen overflow-hidden bg-black/80 pt-[4rem] lg:hidden">
-          <nav className="mx-auto flex max-w-[80%] items-center justify-center rounded-2xl border border-gray-600 bg-secondary py-3 shadow-2xl">
+          <nav className="mx-auto flex max-w-[80%] items-center justify-center rounded-2xl border border-gray-600 bg-background text-secondary-foreground py-3 shadow-2xl">
             <ul className="w-full flex justify-between gap-3 flex-col px-4">
-              <li className="border-b border-gray-600 py-3">Home</li>
-              <li className="border-b border-gray-600 py-3">About</li>
-              <li className="border-b border-gray-600 py-3">Skills</li>
-              <li className="border-b border-gray-600 py-3">Works</li>
+              <li className="border-b border-gray-600 py-3">
+                <a
+                  href="#home"
+                  className="hover:text-primary transition-colors duration-500 ease-in-out"
+                >
+                  Home
+                </a>
+              </li>
+              <li className="border-b border-gray-600 py-3">
+                <a
+                  href="#about"
+                  className="hover:text-primary transition-colors duration-500 ease-in-out"
+                >
+                  About
+                </a>
+              </li>
+              <li className="border-b border-gray-600 py-3">
+                <a
+                  href="#works"
+                  className="hover:text-primary transition-colors duration-500 ease-in-out"
+                >
+                  Works
+                </a>
+              </li>
+              <li className="border-b border-gray-600 py-3">
+                <a
+                  href="#skills"
+                  className="hover:text-primary transition-colors duration-500 ease-in-out"
+                >
+                  Skills
+                </a>
+              </li>
             </ul>
           </nav>
         </main>

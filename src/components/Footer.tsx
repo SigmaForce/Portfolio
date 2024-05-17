@@ -3,8 +3,8 @@ import {
   GitHubLogoIcon,
   InstagramLogoIcon,
   LinkedInLogoIcon,
-} from "@radix-ui/react-icons";
-import React from "react";
+} from '@radix-ui/react-icons'
+import React from 'react'
 
 export default function Footer() {
   return (
@@ -17,12 +17,18 @@ export default function Footer() {
           </span>
         </div>
         <div className="flex gap-4">
-          <LinkedInLogoIcon className="size-8 text-white" />
-          <InstagramLogoIcon className="size-8 text-white" />
-          <GitHubLogoIcon className="size-8 text-white" />
-          <DiscordLogoIcon className="size-8 text-white" />
+          <a href="https://www.linkedin.com/in/sigmaforc3/" target="_blank">
+            <LinkedInLogoIcon className="size-8 text-white hover:text-[#1e1e1e] transition-colors duration-500 ease-in-out" />
+          </a>
+          <a href="https://www.instagram.com/sigmaforc3/" target="_blank">
+            <InstagramLogoIcon className="size-8 text-white hover:text-[#1e1e1e] transition-colors duration-500 ease-in-out" />
+          </a>
+
+          <a href="https://github.com/SigmaForce" target="_blank">
+            <GitHubLogoIcon className="size-8 text-white hover:text-[#1e1e1e] transition-colors duration-500 ease-in-out" />
+          </a>
         </div>
       </main>
     </footer>
-  );
+  )
 }
